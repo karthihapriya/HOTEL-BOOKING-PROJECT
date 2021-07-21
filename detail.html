@@ -1,14 +1,16 @@
 <html>
     <head>
         <title>detail</title>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/detail.css">
     </head>
     <body>
-        <div>
-            <a href="index.html"> <img src="assests/images/logo.png" alt="logo" height="200px" width="150px"/></a>
+        <header>
+            <a href="index.html"> <img class="logo"src="assests/images/logo.png" alt="logo" height="200px" width="150px"/></a>
             <a href="login.html" target="_blank">Login</a>
-            </div>
+        </header>
             <div>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/><br>
+                <img class="img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/><br>
                 <form action="payment.html">
                     <label for="Adults" >Adults: </label>
                     <input type="number" id="Adults" name="Adults" min="1" required><br>
@@ -37,13 +39,12 @@
                 <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit atque minima repellat dolorem commodi voluptate perspiciatis earum facilis, sed soluta rem! Aliquid saepe ipsum quas, voluptatem laborum rerum ipsam quisquam.</P>
 
             </div>
-            <div>
+            <footer>
                 <a href="contact.html" target="_blank">CONTACT US</a><br>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20px" width="22px"></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" height="20px" width="22px"></a><br>
+                <a href="https://www.facebook.com" target="_blank"><img class="social-icons" src="assests/images/facebook.png" height="20px" width="22px"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="social-icons" src="assests/images/instagram.png" height="20px" width="22px"></a>
+                <a href="https://twitter.com" target="_blank"><img class="social-icons" src="assests/images/twitter.png" height="20px" width="22px"></a><br>
                 <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
-            </div>
-        </div>
+            </footer>
     </body>
 </html>

@@ -3,32 +3,44 @@
     <head>
         <title>index</title>
         <link rel="stylesheet" href="styles/index.css"> 
-        <link rel="stylesheet" href="styles/common.css">  
+        <link rel="stylesheet" href="styles/common.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
         </style>
     </head>
-    <body>
-        <header>    
-                <img src="assests/images/logo.png" alt="logo" height="200px" width="150px"/>
-                <a href="login.html" target="_blank">Login</a>
-        </header>            
-        <div>
-            <div class="searchbar">
-                <input type="text" id="search" name="search" placeholder="city"><br>
-            </div >
-            <div class="container">
-                <a href="list.html" target="_self"><img  class="city-images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"  height="300px" width="300px"/></a>
-                <img class="city-images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height="300px" width="300px"/>
-                <img class="city-images"src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="300px" width="300px"/>
-                <img class="city-images"src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="300px" width="300px"/><br>
-            </div>
-                <a href="index.html" target="_self">view more >></a>
+</head>
+<body>
+<div id = "full">
+    <header>
+        <img class = "logo" src = "assests/images/logo.png">
+        <a href = "login.html" target="_blank" class="login">Login</a>
+
+    </header>
+    <div>
+        <div id = "backImage" >
+            <input id = "boxStyle" type = "text" placeholder = "City">
         </div>
-        <footer>
-            <a href="contact.html" target="_blank">CONTACT US</a><br>
-            <a href="https://www.facebook.com" target="_blank"><img class="social-icons" src="assests/images/facebook.png" height="20px" width="22px"></a>
-            <a href="https://www.instagram.com" target="_blank"><img class="social-icons" src="assests/images/instagram.png" height="20px" width="22px"></a>
-            <a href="https://twitter.com" target="_blank"><img class="social-icons" src="assests/images/twitter.png" height="20px" width="22px"></a><br>
-            <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
-        </footer>  
+
+        <div style="margin-left: 12%; margin-right: 12%;">
+        <div class="container">
+            <a href = "list.html"><img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a>
+            <img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt = "Goa">
+            <img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt = "Hyderabad">
+            <img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt = "Kolkata">
+        </div><br>
+        <div class="view-more" ><a href="">View More >></a></div>
+    </div>
+
+<footer>
+    <span><a href = "contact.html" target="_blank" id="contactus">Contact Us</a></span>
+    <span style="padding-left: 87%;">
+    <a href = "https://www.facebook.com" target="_blank"><img class ="social-icons" src = "assests/images/facebook.png"  ></a>
+    <a href = "https://www.instagram.com" target="_blank"><img class ="social-icons" src = "assests/images/instagram.png" ></a>
+    <a href = "https://www.twitter.com" target="_blank"><img class ="social-icons" src = "assests/images/twitter.png"></a>
+    </span>
+    <span style = "padding-left: 45%;" id="copyright"> © 2020 ROOM SEARCH PVT. LTD</span>
+</footer>
+
+</div>
     </body>
+
 </html>

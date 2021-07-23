@@ -1,19 +1,47 @@
-.img{
-    height: 500px;
-    width: 500px;
-}
-.img-style{
-    background-color: rgb(132,136,139);
-    height: 20% relative;
-    width: 50%;
-    margin:2% auto;
-}
-.total{
-    margin: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1% 2%;
-}
-.customer {
-    margin: 2%;
-}
+
+        body {
+            width : 100%;
+            height: 100%;
+            margin: 0px;
+            background-color: #e0e0e0;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+        #full{
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .hotelImage {
+            height: 500px;
+            width: 500px;
+            margin-bottom: 5%;
+            
+        }
+        .info {
+            background-color: rgb(132,136,139);
+            max-width: 50%;
+            min-width: 25%;
+            max-height: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        
+        #pay-link{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-left: 0%;
+        }
+
+        .customer {
+            margin: 2%;
+        }
+        .total {
+            margin: 2%;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 1% 2%;
+        }
+    

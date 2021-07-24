@@ -4,15 +4,61 @@
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/detail.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
-<body>
+<body style="   background-color: #e0e0e0;">
 
-        <header>
+        <!-- <header>
             <a href="index.html"><img class = "logo" src = "assests/images/logo.png"></a>
             <a href = "login.html" target="_blank" class="login">Login</a>
-        </header>
+        </header> -->
+        <header>
+            <div class="header">
+            <div><a href="index.html"><img class = "logo" src = "assests/images/logo.png"></a></div>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal" id="login-button">
+                LOGIN
+            </button> 
+            </div>
+          <!-- Modal -->
+          <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel"> please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row">
+                        <label for="loginInputUsername" class="control-label col-sm-2"  class="label" class="col-sm-2 col-form-label">Username: </label>
+                        <div class="col-sm-10">
+                          <input type="text" class="col-xs-3"  class="form-control input-lg" class="form-control" id="loginInputUsername" aria-describedby="usernameHelp" class="input" placeholder="Enter Username">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="loginInputPassword"  class="col-sm-2 col-form-label" class="control-label col-sm-2"  class="label" class="col-sm-2 col-form-label">Password: </label>
+                        <div class="col-sm-10">
+                          <input type="password"  class="col-xs-3"  class="form-control input-lg" class="form-control" id="loginInputPassword" aria-describedby="passwordHelp" class="input" placeholder="Enter Password">
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer" style=" display:flex; justify-content: center;" >
+                    <button type="login" class="btn btn-primary">Login</button>
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                </form>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+     <header>
     <div class="full">
-        <div class="container">
+        <div class="container"  ">
             <div class="container1">
               <div id="img">
                 <img class = "hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
@@ -21,36 +67,34 @@
             <div class="container2">
           
                     <form action="payment.html"  class="formStyle" >
-                        <ul style=" margin:2%; list-style-type: none;">
-                            <li class="listSty">
-                              <label class="labelSty" for="adults">Adults:</label>
-                              <input class="inputSty" type="number" id="adults" value="1" min="1" name="adults" required ></br>
-                            </li><br>
-                            <li class="listSty">
-                              <label class="labelSty" for="name">Name: </label>
-                              <input class="inputSty" type="text" id="name" name="name" required/></br>
-                            </li><br>
-                            <li class="listSty">
-                              <label class="labelSty"  for="fromDate" >From Date:</label>
-                              <input class="inputSty" type="date" id="fromDate" name="fromDate" required/></br>
-                            </li><br>
-                            <li class="listSty">
-                              <label class="labelSty" for="toDate">To Date:</label>
-                              <input class="inputSty" type="date" id="toDate" name="toDate" required/></br>
-                            </li><br>
-                            <li class="listSty">
-                              <label class="labelSty" for="total">Total:</label>
-                              <input class="inputSty" type="number" id="total" name="total" readonly></br>
-                            </li><br>
-                            <li style="display: flex; padding: 1em; justify-content: center;">
-                              <a href="payment.html">
-                                <input style=" display: flex; margin:10%; font-weight: bold; padding: 0.5em;"class="btn btn-outline-success" type="submit"value="Book Now">
-                              </a>  
-                            </li>
-                          </ul>
-                        </form>
-                      </div>                   
-                    </div><br>
+                            <div class="a">
+                                <label for="adults" class="labelSty" >Adults:</label>
+                                <input type = "number" id = "adults" name = "number" min = "1" required><br>
+                            </div>
+                            <div class="a">
+                                <label for= "name" class="labelSty">Name :</label>
+                                <input type = "text" id ="name" name = "name" required class="col-xs-3"><br>
+                            </div>
+                            <div class="a"> 
+                                <label for = "from"class="labelSty" >From Date :</label>
+                                <input type = "date" id = "from" name="from" required class="col-xs-3"><br>
+                            </div>
+                            <div class="a">
+                                <label for = "toDate" class="labelSty">To Date :</label>
+                                <input type = "date" id = "toDate" name ="toDate" required class="col-xs-3"><br>
+                            </div>
+
+                    <div class="a">
+                        <label for = "total" class="labelSty">Total :</label>
+                        <input type ="text" id = "total" name = "total" readonly="readonly" class="col-xs-3"><br>
+                    </div>
+                        <div class="submitstyle">
+                        <input type = "submit" value = "Book Now" id="submit" class="btn btn-outline-success">
+                        <!-- <button type="button" id="submit" class="btn btn-outline-success">Book Now</button> -->
+                        </div>
+                    </form>  
+            </div>
+        </div>
         <div class = "details">
             <h2>Radisson Blu Hotel</h2>
             <h5>RATING</h5>
@@ -68,16 +112,51 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.um dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi.</p>
             </div>
         </div>
-    </div><br>
+    </div>
         <footer>
-            <span><a href = "contact.html" target="_blank" id="contactus">Contact Us</a></span>
-            <span id="copyright"> © 2020 ROOM SEARCH PVT. LTD</span>
-            <span>
-                <a href = "https://www.facebook.com" target="_blank"><img class ="social-icons" src = "assests/images/facebook.png"  ></a>
-                <a href = "https://www.instagram.com" target="_blank"><img class ="social-icons" src = "assests/images/instagram.png" ></a>
-                <a href = "https://www.twitter.com" target="_blank"><img class ="social-icons" src = "assests/images/twitter.png"></a>
-            </span>
-         </footer>
+            
+            <div class="footer-style"> 
+                <span class="a"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal">
+           Contact Us
+         </button></span>
+        
+                       <span class="copy-right">© 2020 ROOM SEARCH PVT. LTD</span>
+                       <span ><a href = "https://www.facebook.com" target="_blank"><img class ="socialLogo" src = "assests/images/facebook.png"  ></a>
+                       <a href = "https://www.instagram.com" target="_blank"><img class ="socialLogo" src = "assests/images/instagram.png" ></a>
+                       <a href = "https://www.twitter.com" target="_blank"><img class ="socialLogo" src = "assests/images/twitter.png" ></a>
+                       </span>
+                </div>
+               
+               
+                 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog" role="document">
+             <div class="modal-content">
+               <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Get In Touch</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="font-weight: bold;">
+               <div> You for reaching out!!!   </div>                                                                        
+                <div>   please enter your email and we will get back to you</div><br>
+                  
+                   <form action = "index.html" method="get">
+                     <label>Email:</label>
+                       <input type="email"  required placeholder="Enter your email id">
+                   </form>
+             </div>
+       
+        
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-primary">Submit</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </footer>
+        </div>
+        </footer>
     
 </body>
 </html>

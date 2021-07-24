@@ -5,35 +5,40 @@
 .container .text {
     text-align: center;
     font-size: 18px;
-    display: inline-block;
+    /* display: inline-block; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
  }
 .container .whenhover {
-    opacity: 0;   
+    opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0;   
+    left: 15px; 
     right: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    padding: 15px;
     transition: all 0.4s ease-in-out 0s;
-
+    height:150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow:10px 10px 10px 0px grey;
 }
+
+
  .whenhover .text{
-    color:#fff;
+    color: #f1f1f1;
 }
 .cityImage {
     height:150px;
     width: 150px;
     border-radius: 25%;
     box-shadow:10px 10px 10px 0px grey;
+    
 }
 #boxStyle:focus {
     outline:none;
@@ -50,7 +55,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 4%
+    padding: 4%;
 }
 
 .container,
@@ -60,20 +65,15 @@
 
 .container {
      position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
     overflow: hidden;
     max-width: 100%;
     height: auto;
     border-radius: 25%;
-    box-shadow:10px 10px 10px 0px grey;
+    justify-content: space-between;
 }
 
-.container img {
-     max-width: 100%;
-    } 
-.container .cityImage {
-    display: block;
-    } 
 #boxStyle {
     margin: 15% 35%;
     border-radius: 12px;
@@ -89,8 +89,8 @@
     width: 100%;
      background-size: cover;
      background-repeat: no-repeat;
-    -ms-background-position-x: center;
-    -ms-background-position-y: center;
+    /* -ms-background-position-x: center;
+    -ms-background-position-y: center; */
     background-position: center ;
     overflow: hidden;
 }
@@ -99,5 +99,17 @@
     text-decoration: none;
     text-align: center;
     color: black;
+
+}
+.main-part{
+    margin-bottom: 4%;
 }
 
+.input{
+    display: flex;
+    margin: 10%;
+}
+.label{
+    display: flex;
+    margin: 10%;
+}

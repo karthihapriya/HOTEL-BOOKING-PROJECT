@@ -5,62 +5,79 @@
         <link rel="stylesheet" href="styles/detail.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
-    <body>
-    <div>
-    <div id="full">
-        <header>
-            <img class = "logo" src = "assests/images/logo.png">
-            <a href = "login.html" target="_blank" class="login">Login</a>
+<body>
 
+        <header>
+            <a href="index.html"><img class = "logo" src = "assests/images/logo.png"></a>
+            <a href = "login.html" target="_blank" class="login">Login</a>
         </header>
-        <div class="content">
-            <img class = "hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-            
-            <form action="payment.html" class="form">
-                
-                <label for="adults">Adults:</label>
-                <input type = "number" id = "adults" name = "number" min = "1" required><br>
-                
-                <label for= "name">Name:</label>
-                <input type = "text" id ="name" name = "name" required><br>
-                
-                <label for = "from">From Date:</label>
-                <input type = "date" id = "from" name="from" required><br>
-               
-                <label for = "toDate">To Date:</label>
-                <input type = "date" id = "toDate" name ="toDate" required><br>
-                <label for = "total">Total</label>
-                <input type ="text" id = "total" name = "total" readonly="readonly"><br>
-                
-                <input type = "submit" value = "Book Now">
-            </form>
-            <div id = details>
-            <h2>Radisson Blu Hotel</h2><br>
-            <p>RATING</p><br>
-            <P>5 Star</P><br>
-            <P>AMENITIES</P><br>
-            <ul id="available">
+    <div class="full">
+        <div class="container">
+            <div class="container1">
+              <div id="img">
+                <img class = "hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+              </div>
+            </div>
+            <div class="container2">
+          
+                    <form action="payment.html"  class="formStyle" >
+                        <ul style=" margin:2%; list-style-type: none;">
+                            <li class="listSty">
+                              <label class="labelSty" for="adults">Adults:</label>
+                              <input class="inputSty" type="number" id="adults" value="1" min="1" name="adults" required ></br>
+                            </li><br>
+                            <li class="listSty">
+                              <label class="labelSty" for="name">Name: </label>
+                              <input class="inputSty" type="text" id="name" name="name" required/></br>
+                            </li><br>
+                            <li class="listSty">
+                              <label class="labelSty"  for="fromDate" >From Date:</label>
+                              <input class="inputSty" type="date" id="fromDate" name="fromDate" required/></br>
+                            </li><br>
+                            <li class="listSty">
+                              <label class="labelSty" for="toDate">To Date:</label>
+                              <input class="inputSty" type="date" id="toDate" name="toDate" required/></br>
+                            </li><br>
+                            <li class="listSty">
+                              <label class="labelSty" for="total">Total:</label>
+                              <input class="inputSty" type="number" id="total" name="total" readonly></br>
+                            </li><br>
+                            <li style="display: flex; padding: 1em; justify-content: center;">
+                              <a href="payment.html">
+                                <input style=" display: flex; margin:10%; font-weight: bold; padding: 0.5em;"class="btn btn-outline-success" type="submit"value="Book Now">
+                              </a>  
+                            </li>
+                          </ul>
+                        </form>
+                      </div>                   
+                    </div><br>
+        <div class = "details">
+            <h2>Radisson Blu Hotel</h2>
+            <h5>RATING</h5>
+            <p>5 Star</P>
+            <h5>AMENITIES</h5>
+            <ul>
                 <li>Room Service</li>
                 <li>Restaurant</li>
                 <li>Business center</li>
                 <li>Fitness center</li>
                 <li>Pool</li>
             </ul>
-            <div><br>
-                <p><b>DESCRIPTION</b></p><br>
+            <div>
+                <h5>DESCRIPTION</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.um dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi.</p>
             </div>
         </div>
-        </div><br><br>
+    </div><br>
         <footer>
             <span><a href = "contact.html" target="_blank" id="contactus">Contact Us</a></span>
-            <span style="padding-left: 87%;">
-            <a href = "https://www.facebook.com" target="_blank"><img class ="social-icons" src = "assests/images/facebook.png"  ></a>
-            <a href = "https://www.instagram.com" target="_blank"><img class ="social-icons" src = "assests/images/instagram.png" ></a>
-            <a href = "https://www.twitter.com" target="_blank"><img class ="social-icons" src = "assests/images/twitter.png"></a>
+            <span id="copyright"> © 2020 ROOM SEARCH PVT. LTD</span>
+            <span>
+                <a href = "https://www.facebook.com" target="_blank"><img class ="social-icons" src = "assests/images/facebook.png"  ></a>
+                <a href = "https://www.instagram.com" target="_blank"><img class ="social-icons" src = "assests/images/instagram.png" ></a>
+                <a href = "https://www.twitter.com" target="_blank"><img class ="social-icons" src = "assests/images/twitter.png"></a>
             </span>
-            <span style = "padding-left: 45%; " id="copyright"> © 2020 ROOM SEARCH PVT. LTD</span>
-        </footer>
-    </div>
+         </footer>
+    
 </body>
 </html>

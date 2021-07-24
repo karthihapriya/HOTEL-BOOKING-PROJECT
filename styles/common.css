@@ -21,14 +21,13 @@ header {
     left:0;
     width: 100%;
     height:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 .logo{
     height: 60px;
     width: 60px;
-}
-header >img {
-height: 60px;
-width: 60px;
 }
 footer {
     background-color: rosybrown;
@@ -37,24 +36,30 @@ footer {
     position: fixed;
     height: auto;
     top:auto;
+    left:0;
+    display: flex;
+    justify-content:space-between;
+    vertical-align: middle;
+    align-content: center;
+    padding: 1%;
 }
 
 .social-icons {
     height :20px;
     width : 22px;
-    margin-top:21px;
-    padding: 1px;
-
-
+    /* margin-top:15px; */
+    padding: 2px;
 }
 
 .login {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    /* top: 15px; */
+    right: 5px;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin: 1%;
+    margin-right: 10px;
 }
 #contactus{
     position: relative;
@@ -63,6 +68,9 @@ footer {
     color: black;
     font-weight: bold;
     vertical-align: middle;
+    display: flex;
+    justify-content:space-evenly;
+
 }
 main{
     width: 100vw;
@@ -71,75 +79,8 @@ main{
 }
 #copyright{
     font-size: 10px;
-    text-align: center;
-    margin-bottom: 1%;
-    
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
-/* =========================================================
-
-
-a {
-    text-decoration: none;
-    color: black;
-    margin: 1rem;
-}
-body {
-    margin: 0;
-    background-color: #e0e0e0;
-    font-family: Ubuntu, sans-serif;
-}
-
-.logo {
-    height: 60px;
-    width: 60px;
-}
-
-.social-icons {
-    height: 20px;
-    width: 22px;
-}
-
-header,
-footer {
-    background-color: rosybrown;
-    position: sticky;
-}
-
-header {
-    z-index: 2;
-    top: 0;
-}
-
-header > a[href="index.html"] {
-    margin: 0;
-}
-
-footer {
-    bottom: 0;
-}
-
-header > a:last-of-type {
-    vertical-align: middle;
-    margin-left: 92%;
-}
-
-header > *,
-footer > * {
-    vertical-align: middle;
-    display: inline-block;
-}
-
-.copyright,
-footer > a:first-child {
-    margin-right: 39%;
-}
-.copyright {
-    font-size: 10px;
-    vertical-align: bottom;
-    margin-bottom: 0.5rem;
-}
-
-.social-icons-container > a {
-    margin: 0;
-} */

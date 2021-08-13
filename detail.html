@@ -19,19 +19,6 @@
       </style>
   </head>
   <body style="background-color:#e0e0e0 ;height: auto;">
-    <div class="wrapper">
-      <div class="loaderDiv">
-        <iframe src="loader.html">Browser doesn't support iFrames</iframe>
-      </div>
-
-      <div class="header">
-        <div id="h1"><img class="header-logo" src="assests/images/logo.png" alt="logo"></div>
-        <div id="h2">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#staticBackdrop">
-            LOGIN
-          </button>
-        </div>
-      </div> 
     <div>
       <header id="header">
 
@@ -153,94 +140,15 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="contact-us">
-        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactUsModal">Contact Us</button>
-      </div>
-      
-      <div class="copyright">
-        <span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
-      </div>
+    <footer id="footer">
 
-      <div class="social-media">
-        <span>
-          <a href="https://en-gb.facebook.com/login/" target="_blank">
-            <img src="assests/images/facebook.png">
-          </a>
-        </span>
-        <span>
-          <a href="https://www.instagram.com/accounts/login/" target="_blank">
-            <img src="assests/images/instagram.png">
-          </a>
-        </span>
-        <span>
-          <a href="https://twitter.com/LOGIN" target="_blank">
-            <img src="assests/images/twitter.png">
-          </a>
-        </span>
-      </div>
-    </div>
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Please login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group row">
-                <label for="username" class="col-sm-2 col-form-label">Username:</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="username" required autocomplete="on" placeholder="Enter Username">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Password:</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword" required placeholder="Enter Password">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer" style="display: flex; justify-content: center;">
-            <button type="submit" class="btn btn-primary">Login</button>
-          </div>
-        </div>
-      </div>
-    </div>
-      <!--login modal ended-->
+    </footer>
 
-      <!--contact us modal-->
-
-    <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Get In Touch</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="font-weight: bold;">
-           <div> You for reaching out!!!   </div>                                                                        
-            <div>   please enter your email and we will get back to you</div><br>
-              
-               <form action = "index.html" method="get">
-                 <label>Email:</label>
-                   <input type="email"  required placeholder="Enter your email id">
-               </form>
-         </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
+      <div id="loginAndContact">
       </div>
-    </div>
-    <!--contact us modal ended-->
-
+  </div>
+  <script src="scripts/common.js"></script>
+  <script src="scripts/detail.js"></script>
 
   </body>
 </html> 
